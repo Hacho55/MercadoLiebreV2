@@ -10,9 +10,12 @@ function readHTML (fileName) {
 
 const controller = {
 	root: (req, res) => {
-		let html = readHTML('index');
-		res.send(html);
+		
+		res.render('index');
 	},
+	productDetail: (req, res) => {
+		res.render('index');
+	}
 };
 
 module.exports = controller
